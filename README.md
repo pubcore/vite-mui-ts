@@ -10,7 +10,7 @@
 
 #### Install
 
-Find a name for «your-project» scaffold in "Kebab case".
+Find a name for «your-project» in "Kebab case".
 Got to your scope/group directory you want to add scaffold for «your-project»
 
 ```
