@@ -1,7 +1,6 @@
 ## Web-app scaffold based on vite, material-ui, eslint, prettier and TypeScript
 
-- Material-UI (react)
-- styled-components
+- react with MUI (Material-UI v5)
 - TypeScript
 - eslint
 - prettier
@@ -10,7 +9,7 @@
 
 #### Install
 
-Find a name for «your-project» in "Kebab case".
+Find a name for «your-project» in "Kebab case" (this-is-kebab-case)
 Got to your scope/group directory you want to add scaffold for «your-project»
 
 ```

@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from "react";
-import styled from "styled-components";
-import { Button } from "@material-ui/core";
+import { Button } from "@mui/material";
 import { Layout, Logo, Link } from "./components";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   return (
     <Layout>
       <Logo />
-      <p>Hello Vite + Material-UI + styled-components!</p>
+      <p>Hello Vite + react + MUI (Material-UI v5)!</p>
       <p>
         <Button variant="contained" onClick={updateCounter}>
           count is: {count}
@@ -21,6 +20,8 @@ function App() {
       </p>
       <p>
         <Link href="https://reactjs.org">Learn React</Link>
+        {" | "}
+        <Link href="https://mui.com">Learn MUI</Link>
         {" | "}
         <Link href="https://vitejs.dev/guide/features.html">Vite Docs</Link>
       </p>

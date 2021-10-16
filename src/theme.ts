@@ -1,22 +1,26 @@
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
+import {
+  createTheme as muiCreateTheme,
+  responsiveFontSizes,
+} from "@mui/material/styles";
 
 export const createTheme = ({ darkMode }: { darkMode: boolean }) =>
   responsiveFontSizes(
-    createMuiTheme({
+    muiCreateTheme({
       typography: {
         fontFamily: "Helvetica, Arial, sans-serif",
       },
-      palette: {
-        type: darkMode ? "dark" : "light",
-        primary: {
-          main: darkMode ? "#007705" : "#2e7d32",
-        },
-        secondary: {
-          main: darkMode ? "#5d99c6" : "#90caf9",
-        },
-        error: {
-          main: darkMode ? "#ff4455" : "#ff1100",
-        },
-      },
+      palette: darkMode
+        ? {
+            mode: "dark",
+            primary: { main: "#007705" },
+            secondary: { main: "#5d99c6" },
+            error: { main: "#ff4455" },
+          }
+        : {
+            mode: "light",
+            primary: { main: "#2e7d32" },
+            secondary: { main: "#90caf9" },
+            error: { main: "#ff1100" },
+          },
     })
   );

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Link as MuiLink } from "@material-ui/core";
+import { Link as MuiLink } from "@mui/material";
 
 export default function Link({
   children,
@@ -8,6 +8,7 @@ export default function Link({
   href: string;
   children: ReactNode;
 }) {
+  //target and rel settings for web sercurity ...
   return (
     <MuiLink {...{ href }} target="_blank" rel="noopener noreferrer">
       {children}
