@@ -1,4 +1,4 @@
-## Web-app scaffold based on vite, material-ui, eslint, prettier and TypeScript
+## Web-app scaffold based on vite and MUI (Material-UI 5) in TypeScript
 
 - react with MUI (Material-UI v5)
 - TypeScript
